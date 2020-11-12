@@ -5,6 +5,8 @@ module.exports = async (timezone = '', language = '') => {
     const result = await fetch(`https://support.rockstargames.com/${language ? `${language}/` : ''}services/status.json${timezone ? `?tz=${timezone}` : ''}`);
     const data = await result.json();
 
+    // to do : refactor this code...
+
     return {
         redDedOnline: {
             pc: data.statuses.find((s) => s.name === 'Red Dead Online').services_platforms.find((s) => s.name === 'PC').service_status.status,
