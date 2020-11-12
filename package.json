@@ -1,0 +1,9 @@
+{
+  "name": "rockstar-games-status",
+  "version": "1.0.0",
+  "description": "Simple package to get the current status of Rockstar Games services",
+  "main": "index.js",
+  "repository": "https://github.com/Androz2091/rockstar-games-status",
+  "author": "Androz2091 <androz2091@gmail.com>",
+  "license": "MIT"
+}
